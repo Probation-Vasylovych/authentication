@@ -9,8 +9,8 @@ locals {
   }
 
   ecr_repositories = {
-  nginx        = "nginx"
-  app          = "app"
-}
+    nginx = "nginx"
+    app   = "app"
+  }
 
 }

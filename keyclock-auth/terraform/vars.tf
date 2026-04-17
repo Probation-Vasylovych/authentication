@@ -43,3 +43,23 @@ variable "project" {
 variable "domain_name" {
   type = string
 }
+
+variable "keycloak_admin_password" {
+  type      = string
+  sensitive = true
+}
+
+variable "oauth2_proxy_client_secret" {
+  type      = string
+  sensitive = true
+}
+
+variable "keycloak_realm" {
+  type = string
+
+}
+
+variable "oauth2_proxy_client_id" {
+  type = string
+
+}

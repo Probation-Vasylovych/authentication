@@ -21,7 +21,7 @@ resource "aws_lb_target_group" "edge" {
 
   health_check {
     enabled             = true
-    path                = "/"
+    path                = "/healthz"
     protocol            = "HTTP"
     matcher             = "200-499"
     interval            = 30

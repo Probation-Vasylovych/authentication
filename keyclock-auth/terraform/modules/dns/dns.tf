@@ -12,7 +12,7 @@ resource "aws_acm_certificate" "cert" {
   subject_alternative_names = ["*.${var.domain_name}"]
 
   tags = merge(var.common_tags, {
-   Name = "${var.project}-${var.env}-acm-cert"
+    Name = "${var.project}-${var.env}-acm-cert"
   })
 
   lifecycle {
